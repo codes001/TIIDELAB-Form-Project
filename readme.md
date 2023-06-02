@@ -1,0 +1,1 @@
+Handling form submission and displaying the data gotten from the form submisson using Vanilla Javascript

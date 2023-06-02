@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TIIDELab Mini Project</title>
+</head>
+
+<body>
+
+    <main class="main-container">
+        <div class="main-wrapper">
+            <header id="header" class="flex">
+                <div class="logo"> <img src="img/Prince Effiong.png" alt=""></div>
+                <div class="header-text">
+                    <h2>Student Registration Form</h2>
+                    <p>Fill out the form to apply for the training courses. You can consider your application accepted
+                        after you receive a confirmation email</p>
+                </div>
+            </header>
+            <!-- Form Wrap -->
+            <form id="form">
+                <!-- Students info -->
+                <div class="students-info-wrap">
+                    <h1>Student information</h1>
+                    <div class="three-rows-grid">
+                        <input type="text" id="firstName" placeholder="First name">
+                        <input type="text" id="middleName" placeholder="Middle name">
+                        <input type="text" id="lastName" placeholder="Last name">
+                    </div>
+                    <div class="two-rows-grid">
+                        <input placeholder="Date of Birth" type="text" onfocus="(this.type = 'date')" id="dob">
+
+                        <input type="number" class="grid-item-five" placeholder="Student ID" id="studentID">
+                    </div>
+                </div>
+                <!-- Address info  -->
+                <div class="address-info-wrap">
+                    <h1>Address</h1>
+                    <div class="one-row-grid">
+                        <input type="text" class="full-width" placeholder="Street address" id="address">
+                    </div>
+
+                    <div class="two-rows-grid">
+                        <input type="text" placeholder="City" id="city">
+                        <input type="text" placeholder="State/Province" id="state">
+                    </div>
+
+                    <div class="two-rows-grid">
+                        <input type="text" placeholder="Country" id="country">
+                        <input type="number" placeholder="ZIP Code" id="zipCode">
+                    </div>
+                </div>
+                <!-- Contact info  -->
+                <div class="contact-info-wrap">
+                    <h1>Contact </h1>
+                    <div class="two-rows-grid">
+                        <input type="email" placeholder="Email" id="email">
+                        <input type="text">
+                    </div>
+                </div>
+
+                <!-- Courses info  -->
+                <div class="courses-info-wrap">
+                    <h1 class="courses">Courses </h1>
+                    <div class="addRecord full-width">
+                        <button class="button">
+                            <a href="#"><i class="fas fa-plus"></i>Add new record</a>
+                        </button>
+                    </div>
+                    <div class="selectWrap full-width">
+
+                        <select>
+                            <option value="option1">Course</option>
+                            <option value="option2">Course one/option>
+                            <option value="option3">Course two</option>
+                        </select>
+
+                        <select>
+                            <option value="option1">Level</option>
+                            <option value="option2">Level one</option>
+                            <option value="option3">Level two</option>
+                        </select>
+                        <select>
+                            <option value="option1">Language</option>
+                            <option value="option2">Language one</option>
+                            <option value="option3">Language two</option>
+                        </select>
+                        <select>
+                            <option value="option1">Start Date</option>
+                            <option value="option2">Date one</option>
+                            <option value="option3">Date two</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="textareaWrap full-width">
+                    <textarea placeholder="Comments" id="comments"></textarea>
+                </div>
+
+
+                <div class="submitBtnWrap full-width">
+                    <button type="submit" id="submitBtn"><a href="">SEND REQUEST</a></button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

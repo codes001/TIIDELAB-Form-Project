@@ -1,0 +1,274 @@
+/* Import external font family */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global style declarations */
+body {
+    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    padding: 5%;
+    color: #333;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    ;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
+h1{
+    padding-left: 10px;
+    font-size: 1rem ;
+}
+
+/* Reusable styles */
+.flex {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.full-width{
+    width:98%;
+}
+
+/* Container styles */
+.main-container {
+    padding: 2%;
+    background: rgb(229, 97, 82);
+
+    /* width:100vw;
+    height:100vh; */
+}
+
+.main-wrapper {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    padding: 30px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 3rem 0 0;
+}
+
+.logo img {
+    border-radius: inherit;
+}
+/* Form */
+form{
+    width:100%;
+    padding: 10px;
+    overflow:hidden;
+}
+/* Grids */
+.students-info-wrap {
+    padding: 20px 0;
+    margin: 1rem 0;
+
+}
+.address-info-wrap{
+    width:100%;
+}
+
+.one-row-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.three-rows-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.two-rows-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.address-info-wrap, .contact-info-wrap{
+    margin-bottom:1rem;
+}
+/* Inputs */
+input,
+textarea {
+    height: 40px;
+    border: 1px solid rgb(150, 150, 150);
+    border-radius: 2px;
+    padding: 10px;
+    margin: .5rem;
+}
+
+textarea {
+    width: 100%;
+    height: 130px;
+}
+
+input:focus,
+select:focus,
+option:focus,
+textarea:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder,
+select,
+option {
+    font-family: inherit !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+.submitBtnWrap{
+    margin-left:10px;
+}
+
+#submitBtn{
+    width: 100%;
+    padding:1rem 0;
+    background: #047aed;
+    font-size:1rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: inherit !important;
+    height:50px;
+    border:none;
+}
+.courses::after{
+    content: '*';
+    color:red;
+}
+.selectWrap{
+    /* width:100%; */
+    border: 1px solid rgb(150, 150, 150);
+    border-top:0;
+    margin-left:10px;
+    padding:0 1rem;
+    margin-bottom:10px;
+}
+
+select{
+    margin: 1rem 0;
+    padding:.7rem 1rem;
+    border-right:1px solid rgb(150, 150, 150) none;
+}
+.fa {
+    padding: 1rem;
+    color: #444;
+    border: 1px solid rgb(150, 150, 150);
+}
+
+.addRecord{
+    border: 1px solid rgb(150, 150, 150);
+    border-bottom: 1px solid rgb(201, 201, 201);
+    padding: .8rem;
+    margin-left:10px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+.button{
+    background: rgb(219, 218, 218);
+    height:40px;
+    padding: .6rem;
+    border:none;
+    border-radius:5px;
+}
+.button i{
+    margin-right: 5px;
+}
+/* Button for preview page */
+.preview{
+    padding: 2rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    line-height:30px;
+    font-weight:400;
+    border-radius: 4px;
+}
+.preview-heading{
+    font-size:2rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    padding:.8rem 1rem;
+    background: #047aed;
+    font-size:1rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: inherit !important;
+    height:50px;
+    border:none;
+    margin-top:4rem;
+    border-radius:5px;
+}
+@media(max-width:768px){
+    .three-rows-grid{
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width:500px){
+    header{
+        flex-direction: column;
+        text-align:center;
+        font-size:.8rem;
+        line-height:27px;
+    }
+    .logo{
+        margin-bottom: 1rem;
+    }
+    .three-rows-grid,.two-rows-grid{
+        grid-template-columns: 1fr;
+    }
+}
